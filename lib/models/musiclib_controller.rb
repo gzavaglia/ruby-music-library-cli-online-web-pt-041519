@@ -86,7 +86,7 @@ class MusicLibraryController
   def play_song
     #list_songs
     puts "Which song number would you like to play?"
-    #list_songs
+    list_songs
     user_song = gets.strip.to_i
     if user_song > 0 && user_song <= Song.all.length
       sorted_array = Song.all.sort{|a,b| a.name <=> b.name}
