@@ -93,9 +93,6 @@ class MusicLibraryController
       selection = sorted_array[user_song-1]
       #song = Song.all.sort{|a,b| a.name <=> b.name}[user_song-1]
       puts "Playing #{selection.name} by #{selection.artist.name}"
-    else
-      play_song
-    
     end
     
   end 
